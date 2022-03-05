@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/cupcake.png" type="image/x-icon" />
+    <title>Pasteleria</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div>
+        <div class="block-logo">
+          <img class="logo" src="img/cupcake.png" alt="" />
+          <p>Pasteleria Rosetta</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#title_inventario">Inventario</a></li>
+          <li><a href="#title_pedidos">Pedidos</a></li>
+          <li><a href="index.html"><u>Sitio Cliente</u></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Parallax banner -->
+      <section id="inicio" class="container banner">
+        <h1>Pasteles especiales para personas especiales</h1>
+        <p>
+          Nuestros pasteles estan hechos con los mejores ingredientes y la
+          calidad digna de tu paladar.
+        </p>
+      </section>
+      <!-- Cake flavors inventory -->
+      <section class="container section-sabores" style="overflow-x: auto">
+        <h1 id="title_inventario" class="cake-title">Inventario de Sabores</h1>
+        <table id="inv_sabores" class="cake-table">
+          <thead>
+            <th>Sabor</th>
+            <th>Cantidad</th>
+            <th>Adorno</th>
+            <th>Cantidad</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Sabor">Chocolate con Nutella</td>
+              <td data-label="Cantidad">20</td>
+              <td data-label="Adorno">Felicidades</td>
+              <td data-label="Cantidad">10</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Vainilla</td>
+              <td data-label="Cantidad">16</td>
+              <td data-label="Adorno">Mi Bautizo</td>
+              <td data-label="Cantidad">5</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Frutos Rojos</td>
+              <td data-label="Cantidad">7</td>
+              <td data-label="Adorno">Mis Quince Años</td>
+              <td data-label="Cantidad">15</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Milky Way</td>
+              <td data-label="Cantidad">12</td>
+              <td data-label="Adorno">Happy Birthday</td>
+              <td data-label="Cantidad">36</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Mont Blanc</td>
+              <td data-label="Cantidad">23</td>
+              <td data-label="Adorno">Halloween</td>
+              <td data-label="Cantidad">6</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Dalmata</td>
+              <td data-label="Cantidad">8</td>
+              <td data-label="Adorno">Mr and Mrs</td>
+              <td data-label="Cantidad">8</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Snickers</td>
+              <td data-label="Cantidad">5</td>
+              <td data-label="Adorno"></td>
+              <td data-label="Cantidad"></td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Dulce de Leche</td>
+              <td data-label="Cantidad">10</td>
+              <td data-label="Adorno"></td>
+              <td data-label="Cantidad"></td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Birthday Cake</td>
+              <td data-label="Cantidad">2</td>
+              <td data-label="Adorno"></td>
+              <td data-label="Cantidad"></td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Tres Leches</td>
+              <td data-label="Cantidad">6</td>
+              <td data-label="Adorno"></td>
+              <td data-label="Cantidad"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Pending orders -->
+      <section class="container section-pedidos" style="overflow-x: auto">
+        <h1 id="title_pedidos" class="cake-title">Pedidos Pendientes</h1>
+        <table id="pedidos" class="cake-table">
+          <thead>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Sabores</th>
+            <th>Adornos</th>
+            <th>Descripción</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Nombre">Maria Elena Martinez Perez</td>
+              <td data-label="Email">elena1284@algo.com</td>
+              <td data-label="Teléfono">(111) 111-1111</td>
+              <td data-label="Sabores">Chocolate con Nutella</td>
+              <td data-label="Adornos">Felicidades</td>
+              <td data-label="Descripción">
+                Quiero un pastel sencillo de chocolate con nutella y un adorno
+                de felicidades, es para un niño de 11 años
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div>
+          <div class="block-logo-footer">
+            <img class="logo-footer" src="img/cupcake.png" alt="" />
+            <div class="info-footer">
+              <p><strong>Pasteleria Rosetta</strong></p>
+              <p>
+                <strong>Direccion:</strong> Calle blah blah blah #339, Col.
+                Alguna, CDMX
+              </p>
+              <p><strong>Teléfono:</strong> (111) 111-1111</p>
+              <p>
+                <strong>Horario:</strong> Lunes a Sábado: 9:00 a.m - 8:00 p.m
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul class="nav-links-footer">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#title_inventario">Inventario</a></li>
+            <li><a href="#title_pedidos">Pedidos</a></li>
+            <li><a href="index.html"><u>Sitio Cliente</u></a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

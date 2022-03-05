@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/cupcake.png" type="image/x-icon" />
+    <title>Pasteleria</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div>
+        <div class="block-logo">
+          <img class="logo" src="img/cupcake.png" alt="" />
+          <p>Pasteleria Rosetta</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#title_sabores">Sabores</a></li>
+          <li><a href="#title_adornos">Adornos</a></li>
+          <li><a href="#title_solicitud">Pedir un pastel</a></li>
+          <li><a href="pastelero.html"><u>Sitio Pastelero</u></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Parallax banner -->
+      <section id="inicio" class="container banner">
+        <h1>Pasteles especiales para personas especiales</h1>
+        <p>
+          Nuestros pasteles estan hechos con los mejores ingredientes y la
+          calidad digna de tu paladar.
+        </p>
+      </section>
+      <!-- Cake flavors -->
+      <section class="container section-sabores">
+        <h1 id="title_sabores" class="cake-title">Sabores para tus pasteles</h1>
+        <table class="cake-table">
+          <thead>
+            <th>Sabor</th>
+            <th>Precio</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Sabor">Chocolate con Nutella</td>
+              <td data-label="Precio">$380.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Vainilla</td>
+              <td data-label="Precio">$300.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Frutos Rojos</td>
+              <td data-label="Precio">$350.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Milky Way</td>
+              <td data-label="Precio">$380.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Mont Blanc</td>
+              <td data-label="Precio">$350.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Dalmata</td>
+              <td data-label="Precio">$350.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Snickers</td>
+              <td data-label="Precio">$380.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Dulce de Leche</td>
+              <td data-label="Precio">$330.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Birthday Cake</td>
+              <td data-label="Precio">$330.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Tres Leches</td>
+              <td data-label="Precio">$300.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Combinar 2 sabores</td>
+              <td data-label="Precio">$450.00 MXN</td>
+            </tr>
+            <tr>
+              <td data-label="Sabor">Combinar 3 o más sabores</td>
+              <td data-label="Precio">$500.00 MXN</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Quick ornaments gallery (non optimized) -->
+      <section class="container section-gallery">
+        <div class="gallery-wrapper">
+          <h1 id="title_adornos" class="cake-title">Adornos para tú pastel</h1>
+          <div class="img-area">
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn1.jpg" alt="" />
+              <p class="gallery-text">$80.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn2.jpg" alt="" />
+              <p class="gallery-text">$90.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn3.png" alt="" />
+              <p class="gallery-text">$90.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn4.png" alt="" />
+              <p class="gallery-text">$80.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn5.png" alt="" />
+              <p class="gallery-text">$70.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+            <div class="img-wrapper">
+              <img class="gallery-img" src="img/orn6.png" alt="" />
+              <p class="gallery-text">$120.00 MXN</p>
+              <p class="gallery-text">(6 disponibles)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cake request form -->
+      <section class="container section-form">
+        <h1 id="title_solicitud" class="cake-title">Solicite su pastel</h1>
+        <form>
+          <div>
+            <label for="name">
+              <b>Nombre</b>
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Nombre Completo"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">
+              <b>Email</b>
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Su correo de contacto"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">
+              <b>Teléfono</b>
+            </label>
+            <input
+              id="email"
+              type="tel"
+              placeholder="Su número de contacto"
+              required
+            />
+          </div>
+          <div>
+            <label for="sabores-check">
+              <b>Seleccione los sabores de su pastel</b>
+            </label>
+            <div class="sabores-check" name="sabores-check">
+              <span>
+                <label for="cake_choconut">Chocolate con Nutella</label>
+                <input
+                  id="cake_choconut"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="ChocolateNutella"
+                />
+              </span>
+
+              <span>
+                <label for="cake_vainilla">Vainilla</label>
+                <input
+                  id="cake_vanilla"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="Vainilla"
+                />
+              </span>
+
+              <span>
+                <label for="cake_frutos">Frutos Rojos</label>
+                <input
+                  id="cake_frutos"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="FrutosRojos"
+                />
+              </span>
+
+              <span>
+                <label for="cake_milky">Milky Way</label>
+                <input
+                  id="cake_milky"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="MilkyWay"
+                />
+              </span>
+
+              <span>
+                <label for="cake_blanc">Mont Blanc</label>
+                <input
+                  id="cake_blanc"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="MontBlanc"
+                />
+              </span>
+
+              <span>
+                <label for="cake_dalmata">Dalmata</label>
+                <input
+                  id="cake_dalmata"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="Dalmata"
+                />
+              </span>
+
+              <span>
+                <label for="cake_snickers">Snickers</label>
+                <input
+                  id="cake_snickers"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="Snickers"
+                />
+              </span>
+
+              <span>
+                <label for="cake_dulce">Dulce de Leche</label>
+                <input
+                  id="cake_dulce"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="DulceLeche"
+                />
+              </span>
+
+              <span>
+                <label for="cake_birthday">Birthday Cake</label>
+                <input
+                  id="cake_birthday"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="BirthdayCake"
+                />
+              </span>
+
+              <span>
+                <label for="cake_leches">Tres Leches</label>
+                <input
+                  id="cake_leches"
+                  type="checkbox"
+                  aria-label="Chocolate con Nutella"
+                  name="sabores[]"
+                  value="TresLeches"
+                />
+              </span>
+            </div>
+          </div>
+          <div>
+            <label for="adornos-check">
+              <b>Seleccione los adornos de su pastel</b>
+            </label>
+            <div class="adornos-check" name="adornos-check">
+              <span>
+                <label for="ornament_felicidades">Felicidades</label>
+                <input
+                  id="ornament_felicidades"
+                  type="checkbox"
+                  aria-label="Felicidades"
+                  name="adornos[]"
+                  value="Felicidades"
+                />
+              </span>
+
+              <span>
+                <label for="ornament_bautizo">Mi Bautizo</label>
+                <input
+                  id="ornament_bautizo"
+                  type="checkbox"
+                  aria-label="Mi Bautizo"
+                  name="adornos[]"
+                  value="Bautizo"
+                />
+              </span>
+
+              <span>
+                <label for="ornament_quince">Mis Quince años</label>
+                <input
+                  id="ornament_quince"
+                  type="checkbox"
+                  aria-label="Mis Quince Años"
+                  name="adornos[]"
+                  value="Quince"
+                />
+              </span>
+
+              <span>
+                <label for="ornament_birthday">Happy Birthday</label>
+                <input
+                  id="ornament_birthday"
+                  type="checkbox"
+                  aria-label="Happy Birthday"
+                  name="adornos[]"
+                  value="Birthday"
+                />
+              </span>
+
+              <span>
+                <label for="ornament_halloween">Halloween</label>
+                <input
+                  id="ornament_halloween"
+                  type="checkbox"
+                  aria-label="Halloween"
+                  name="adornos[]"
+                  value="Halloween"
+                />
+              </span>
+
+              <span>
+                <label for="ornament_mrmrs"
+                  >Mr and Mrs (Escribir letras en la descripción)</label
+                >
+                <input
+                  id="ornament_mrmrs"
+                  type="checkbox"
+                  aria-label="Mr and Mrs"
+                  name="adornos[]"
+                  value="MrsMrs"
+                />
+              </span>
+            </div>
+          </div>
+          <div class="full-width">
+            <label for="descripcion">Descripción del pastel</label>
+            <textarea
+              id="descripcion"
+              placeholder="Escriba todos los detalles de su pastel"
+            ></textarea>
+          </div>
+          <div class="full-width">
+            <button type="submit">Enviar solicitud de pastel</button>
+            <button type="reset">Volver a empezar la solicitud</button>
+          </div>
+        </form>
+      </section>
+      <!-- Site footer -->
+      <footer class="footer">
+        <div>
+          <div class="block-logo-footer">
+            <img class="logo-footer" src="img/cupcake.png" alt="" />
+            <div class="info-footer">
+              <p><strong>Pasteleria Rosetta</strong></p>
+              <p>
+                <strong>Direccion:</strong> Calle blah blah blah #339, Col.
+                Alguna, CDMX
+              </p>
+              <p><strong>Teléfono:</strong> (111) 111-1111</p>
+              <p>
+                <strong>Horario:</strong> Lunes a Sábado: 9:00 a.m - 8:00 p.m
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul class="nav-links-footer">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#title_sabores">Sabores</a></li>
+            <li><a href="#title_adornos">Adornos</a></li>
+            <li><a href="#title_solicitud">Pedir un pastel</a></li>
+            <li><a href="pastelero.html"><u>Sitio Pastelero</u></a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
